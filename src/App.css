@@ -1,0 +1,134 @@
+
+
+.container, .row, div {
+  padding: 0%;
+  margin: 0%;
+  --bs-gutter-x: 0 !important;
+  --bs-gutter-y: 0 !important;
+}
+
+
+*, h1 {
+  text-shadow: 1vw 1vw 1vw rgba(166, 12, 255, 0.5);
+}
+
+@media screen and (max-width: 499px) {
+  .App-logo {
+    height: 10vh;
+  }
+  .App-header {
+    display: grid;
+  }
+  .App-footer {
+    display: grid;
+  }
+  .col-4 {
+    width: 100vw;
+    margin-bottom: 1vh;
+  }
+  .form-group{
+    width: 80vw;
+  }
+  .App-img {
+    width: 100vw;
+  }
+}
+
+/* Tablets */
+@media screen and (max-width: 899px) and (min-width: 500px) {
+  .form-group{
+    width: 60vw;
+  }
+}
+
+/* Laptop */
+@media screen and (min-width: 900px) and (max-width: 1319px) {
+
+  .form-group{
+    width: 60vw;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1319px) {
+
+  .App-header .col-md-4 {
+    text-wrap: nowrap;
+  }
+  .App-header{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .App-footer{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .form-group{
+    width: 40vw;
+  }
+
+}
+
+.col-md-4 {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.link, a{
+  transition:  0.3s ease 0s;
+  color: white;
+}
+.link:hover {
+  background-color: rgba(166, 12, 255, 0.8);
+  transition:  0.3s ease 0s;
+}
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.App-header {
+  background-color: rgb(36, 37, 37);
+  color: white;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 1em;
+  text-align: center;
+  z-index: 100;
+}
+.App-footer {
+  background-color: rgb(36, 37, 37);
+  width: 100vw;
+  padding: 1em;
+  text-align: center;
+  z-index: 100;
+}
+.App-logo {
+  pointer-events: none;
+  border: #000 solid 0.5vw;
+  border-radius: 3%;
+  width: 30%;
+}
+.App-img {
+  pointer-events: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+}
+.button{
+  background-color: rgba(166, 12, 255, 0.8);
+}
+
+
+
+
+
